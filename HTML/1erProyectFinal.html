@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' type='text/css' media='screen' href="1erProyectFinal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+  <div class="header">
+  <nav class="navbar navbar-dark vanrab">
+  <div class="container-fluid ">
+      <h1 class="navbar-brand head-envio" data-text="!!! Envios a todo el pais con una compra mayor a $500 !!!">!!! Envios a todo el pais con una compra mayor a $500 !!!</h1>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+      <button class="btn btn-outline-success" type="submit" id="IconSearch"><img src="/Png/search.svg" alt=""></button>
+    </form>
+  </div>
+</nav>
+<header>
+   <!-- Barra de Navegacion-->
+  <div class="header-content">
+    <div class="menu" id="show-menu">
+        <nav>
+            <ul>
+              <div class="menu__logo">
+                <a href="1erProyectFinal.html"><img src="Png/skate_icon_133135.png" alt=""></a>
+              </div>
+              <li class="dropdown-Dep">
+                <button type="button"  id="Dep" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Deportes
+                </button>
+                <div class="dropdown-menu" id="Dep-menu">
+                  <a class="dropdown-item" href="Productos2.html"><b>Skate</b></a>
+                  <a class="dropdown-item" href="Productos2.html">Longboard</a>
+                  <a class="dropdown-item" href="Productos2.html">Rollers - Patin</a>
+                  <a class="dropdown-item" href="Productos2.html">Bicileta</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li class="dropdown-Dep">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hombre
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Productos2.html">Remeras</a>
+                  <a class="dropdown-item" href="Productos2.html">Buzos</a>
+                  <a class="dropdown-item" href="Productos2.html">Pantalones</a>
+                  <a class="dropdown-item" href="Productos2.html">Camperas</a>
+                  <a class="dropdown-item" href="Productos2.html">Sweaters</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li class="dropdown-Dep">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mujer
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Productos2.html">Remeras</a>
+                  <a class="dropdown-item" href="Productos2.html">Buzos</a>
+                  <a class="dropdown-item" href="Productos2.html">Pantalones</a>
+                  <a class="dropdown-item" href="Productos2.html">Camperas</a>
+                  <a class="dropdown-item" href="Productos2.html">Sweaters</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li class="dropdown-Dep">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Niñx
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Productos2.html">Remeras</a>
+                  <a class="dropdown-item" href="Productos2.html">Buzos</a>
+                  <a class="dropdown-item" href="Productos2.html">Pantalones</a>
+                  <a class="dropdown-item" href="Productos2.html">Camperas</a>
+                  <a class="dropdown-item" href="Productos2.html">Sweaters</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li class="dropdown-Dep">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tecnologia
+                </button>
+                <div class="dropdown-menu" id="tech">
+                  <a class="dropdown-item" href="Productos2.html">Go Pro</a>
+                  <a class="dropdown-item" href="Productos2.html">Auriculares Fit</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="Productos2.html">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li class="dropdown-Dep">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Marcas
+                </button>
+                <div class="dropdown-menu" >
+                  <a class="dropdown-item" href="Productos2.html">Nike</a>
+                  <a class="dropdown-item" href="Productos2.html">Woodo</a>
+                  <a class="dropdown-item" href="Productos2.html">DC</a>
+                  <a class="dropdown-item" href="Productos2.html">Captain Phin</a>
+                  <a class="dropdown-item" href="Productos2.html">Element</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">20% En tu primera compra, registrandote en nuestra pagina</a>
+                </div>
+              </li>
+              <li  class="dropdown-Dep" id="Icons">
+                <a href="Contacto.html"><img src="Png/user.png" alt="icono-usuario"></a>
+                <a href="/CarritoProyFinal.html"><img src="Png/cart.png" alt="icono-carrito"></a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu__logo2">
+      <i><img src="Png/skate_icon_133135.png" alt=""></i>
+    </div>
+  </div>
+</header>
+</div>
+
+<!--================= Carousel================ -->
+
+
+<div class="container-all" id="move-content">  
+  
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-inerval="4000">
+      <img src="/Png/FRANSKATE1.jpg" class="d-block w-100" alt="Busos" >
+    </div>
+    <div class="carousel-item" data-bs-inerval="4000">
+      <img src="/Png/LongBoard.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-inerval="4000">
+      <img src="/Png/FRANSKATE2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- ================Final Carousel============= -->
+
+<!-- ================Redirecciones============= -->
+<div class="boxes">
+  <div class="box1"><b>Busos</b><p>desde $4000</p></div>
+  <div class="box2"><b>Zapatillas</b><p>desde $5500</p></div>
+  <div class="box3"><b>Remeras</b><p>desde $1400</p></div>
+  <div class="box4"><b>Camperas</b><p>desde $7000</p></div>
+</div>
+
+<!-- ================ Final Redirecciones============= -->
+
+<!--Contenedor Total con sus botones redireccionadores-->
+<div class="Novedades">
+ <div class="Contorno-Ult-Nov">
+    <h2 class="Ult-Nov">Ultimas Novedades</h2>
+  </div>
+<div class="Caja-Nov1">
+  <img src="/Png/Buso.jpg" alt="">
+</div>
+<div class="Caja-Nov2">
+  <img src="/Png/PantSkate.jpg" alt="">
+</div>
+<div class="Caja-Nov3">
+  <img src="/Png/RemeCapt.jpg" alt="">
+</div>
+</div>
+<!-- ==================== Los Mas Vendidos =================== -->
+<div class=" MasVendidos">
+  <h2>Los mas Vendidos</h2>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         <!-- Slider 1 -->
+        <div class="carousel-item active">
+          <div class="row"  id="cards2"> </div>
+          <div class="row">
+            <div class="col-3 ">  <template class="template-card" >
+              <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <div class="card-body">
+                      <img src=`` class="card-img-top">
+                      <br>
+                      <h5 class="card-title"><b> Café </b></h5>
+                      <p class="card-text"><b><span>5000</span></b></p>
+                      <p class="card-text"><b id="marca"></b></p>
+                      <button class="btn btn-primary agregar-carrito">Comprar</button>
+                  </div>
+              </div>
+            </div>
+        </template> </div>
+            </div>
+        </div>
+        <!-- End of Slider 1 -->
+
+        <!-- Slider 2 -->
+        <div class="carousel-item">
+          <div class="row" id="cards" ></div>
+          <div class="row">
+            <div class="col-3 ">  <template class="template-card" >
+              <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <div class="card-body">
+                      <img src=`` class="card-img-top">
+                      <br>
+                      <h5 class="card-title"><b> Café </b></h5>
+                      <p class="card-text"><b><span>5000</span></b></p>
+                      <p class="card-text"><b id="marca"></b></p>
+                      <button class="btn btn-primary agregar-carrito">Comprar</button>
+                  </div>
+              </div>
+            </div>
+        </template> </div>
+            </div>
+        </div>
+        <!-- End of Slider 2 -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+  <!-- <div class="contenedor">
+    <div class="producto" id="btnTrash">
+      <a href="Productos2.html">
+        <button>
+          <img src="Png/Buso.jpg" alt="" id="busoTrash">
+            <div class="placeholder-fade">
+              <p class="producto__nombre">Busos</p>
+            </div>
+        </button>
+      </a>
+    </div>
+    <div class="producto" id="btnSk8">
+      <a href="Productos2.html" >
+        <button >
+          <img src="Png/Skate.jpg" alt="" id="busoTrash">
+          <div class="placeholder-fade">
+            <p class="producto__nombre">Skates</p>
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="producto"id="btnReme">
+      <a href="Productos2.html">
+        <button >
+          <img src="Png/RemeCapt.jpg" alt="" id="busoTrash">
+          <div class="placeholder-fade">
+            <p class="producto__nombre">Remeras</p>
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="producto" id="btnPant">
+      <a href="Productos2.html">
+        <button>
+          <img src="Png/PantSkate.jpg" alt="" id="busoTrash">
+          <div class="placeholder-fade">
+            <p class="producto__nombre">Pantalones</p>
+          </div>
+        </button>
+      </a>
+    </div>
+    </div> -->
+    
+  <!--=============== Footer ===============-->
+    <div class="Footer">
+        <h1 class="Logo">LOGO</h1>
+        <h2></h2>
+        <ul class="Foot1">
+          <h4>Intitucional</h4>
+          <li>Quiénes Somos</li>
+          <li> Políticas de Privacidad</li>
+          <li>Protocolos COVID-19</li>
+          <li> Términos y Condiciones</li>
+          <li>Defensa del Consumidor</li>
+        </ul>
+        <ul class="Foot2">
+          <h4>Ayuda</h4>
+          <li>Preguntas Frecuentes</li>
+          <li> Sucursales</li>
+          <li>Pagos</li>
+          <li>Entregas</li>
+          <li>Cambios</li>
+        </ul>
+        <ul class="Foot3">
+          <h4>Centro de Atencion al Cliente</h4>
+          <li>0810-xxx-xxxx</li>
+          <li>Lunes a Viernes de 9 a 20 hs</li>
+          <li>Sábado de 9 a 17 hs</li>
+          <li>Contacto</li>
+          <li>Botón de Arrepentimiento</li>
+          <li>+54 351 7895-201</li>
+        </ul>
+        <div class="Foot-Parr">
+        <p><hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam repellendus laboriosam id, ratione similique pariatur ad dolore, quisquam alias quae! At est numquam sunt sint? Dolorem iure tempora repellendus?</p>
+        </div>
+      </div>
+</div>
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="1erProyectFinalBorrador.js"></script>
+  </body>
+  
+  </html>
+  

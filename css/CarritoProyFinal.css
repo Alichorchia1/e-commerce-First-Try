@@ -1,0 +1,304 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-image: url(Png/skate-portada.jpg); 
+    background-size: cover;
+    font-family: sans-serif;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #669996;
+    box-sizing: border-box;
+  }
+  
+  /* Barra de contenidos*/
+  
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(92, 22, 63);
+  }
+  .menu{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .menu nav {
+    height: 100%;
+  }
+  .menu nav ul{
+    height: 100%;
+  }
+  .menu nav ul li a{
+    color: #777777;
+    font-size: 18px;
+    transition: color 300ms;
+  }
+  .menu nav ul li a:hover{
+    color: rgb(102, 22, 22);;
+  }
+  #Dep{
+    margin-left: 35px;
+    
+  }
+  .menu__logo{
+    float: left;
+    width: 50px;
+    height: 50px;
+    color: #f1f1f1;
+  }
+  .menu__logo2{
+    width: 50px;
+    height: 50px;
+    color: #f1f1f1;
+    visibility:hidden;
+  }
+  .dropdown-Dep{
+    float: left;
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .menu nav ul li button {
+    background-color: transparent;
+    border: none;
+    list-style: none;
+    cursor:pointer;
+    overflow: hidden; 
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  #color {
+    color: azure;
+  }
+  .dropdown-Dep:hover .dropdown-menu {
+    display: block;
+    text-align: center; 
+    background-color:rgb(54, 14, 37);
+    margin-top: 340px;
+  }
+  .dropdown-Dep #tech {
+    margin-top: 235px;
+  }
+  .dropdown-menu{
+    margin-top: 0;
+  }
+  #dropdownRopa{
+    background-color: rgb(102, 22, 22);
+  }
+  #Icons {
+    width: 100px;
+    height: 50px;
+    position:absolute;
+    right: 40px;
+    top: 16px;
+    justify-content: space-between;
+  }
+
+  #texto {
+    position: center;
+    display: block;
+  }
+  #img {
+    background-color: transparent;
+    color: dashed red;
+    margin-top: 0px;
+  }
+  
+  /*Portada*/
+  
+  .producto a button {
+    background-color:wheat;
+  }
+  .placeholder-fade{
+    font-family: Verdana;
+    text-align: center;
+  }
+  #hi{
+    position: right bottom;
+  }
+  .card{
+    background-image: linear-gradient(to bottom, rgb(130, 63, 194), rgb(23, 9, 29));
+  }
+  .card-body{
+    text-align: center;
+    color: bisque;
+  }
+  .card-img-top {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  #btnComp{
+    background-color: rgb(102, 22, 22);
+  }
+aside {
+    background-color: rgba(117, 44, 89, 0.97);
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+#items {
+  background-color:rgba(156, 90, 133, 0.97);
+  border-radius: 15px;
+}
+#btn-mas {
+  background-color: rgba(117, 44, 89, 0.97);
+  border-color: rgba(117, 44, 89, 0.97);
+}
+#btn-menos{
+  background-color: rgb(54, 14, 37);
+  border-color:rgb(54, 14, 37) ;
+}
+
+    /* Responsive */
+
+    @media screen and (max-width: 1090px){
+      .dropdown-Dep{
+          margin: 0px 0px;
+      }
+    }
+
+  @media screen and (max-width: 908px){
+    header {
+      position:fixed;
+      z-index: 5;
+      top: 0;
+    }
+    .menu{
+      margin-top: 20px;
+      width: 0px;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, rgb(95, 38, 148), rgb(0, 0, 0));
+      position:fixed;
+      top: 80px;
+      left: 0;
+      overflow:hidden ;
+      transform: translateX(-350px);
+      box-shadow: 10px 0 20px -30px black;   
+      transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+    
+    .show-lateral {
+      width: 150px;
+      transform: translateX(0px);
+      z-index: 5;
+  }
+    .dropdown-Dep {
+      margin-left: 2px;
+      height: 50px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #Dep{
+      margin-left: -1px;
+    }
+    .container-all{
+      transition: all 300ms;
+      margin-top: 90px;
+    }
+    .move-container-all{
+      transform: translateX(85px);
+    }
+    .menu__logo{
+      display: none;
+    }
+    .menu__logo2{
+      visibility:visible;
+      background-color: transparent !important;
+      cursor: pointer;
+    }
+    #Icons{
+      position: relative;
+      margin: 30px;
+      justify-content: space-between;
+      padding: 30px;
+    }
+    .dropdown-Dep:hover .dropdown-menu {
+      position: absolute;
+      margin-top: 200px;
+      text-align: center; 
+      background-color:rgb(54, 14, 37) ;
+      margin-left: 300px;
+    }
+  }
+  @media screen and (max-width: 890px){
+  .card{
+      margin-top: 100px;
+      outline-color: thistle;
+  }
+  aside{
+      margin-top: 40px;
+  }
+}
+@media screen and (max-width: 700px){
+  header {
+    position:fixed;
+    z-index: 5;
+    top: 0;
+  }
+  .menu{
+    margin-top: 20px;
+    width: 0px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(95, 38, 148), rgb(0, 0, 0));
+    position:absolute;
+    top: 80px;
+    left: 0;
+    overflow:hidden ;
+    transform: translateX(-350px);
+    box-shadow: 10px 0 20px -30px black;   
+    transition: all 300ms cubic-bezier(1,0,0,1);
+  }
+  
+  .show-lateral {
+    width: 150px;
+    transform: translateX(0px);
+    z-index: 5;
+}
+  .dropdown-Dep {
+    margin-left: 2px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #Dep{
+    margin-left: -1px;
+    
+  }
+  .container-all{
+    transition: all 300ms;
+    margin-top: 90px;
+  }
+  .move-container-all{
+    transform: translateX(100px);
+  }
+  .menu__logo{
+    display: none;
+  }
+  .menu__logo2{
+    visibility:visible;
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+  #Icons{
+    position: relative;
+    margin: 30px;
+    justify-content: space-between;
+    padding: 30px;
+
+  }
+
+}
