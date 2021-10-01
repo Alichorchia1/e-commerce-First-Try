@@ -1,5 +1,5 @@
 //Variables
-const URLJSON = "apiProyecto.json"
+const URLJSON = "/apiProyecto.json"
 const cards =document.querySelector('#cards')
 const items =document.querySelector('#items')
 const footer = document.querySelector('#footer')
